@@ -26,7 +26,7 @@ useEffect(()=>{
     </Table.Header>
 
     <Table.Body>
-      {
+    {
      products.map(product=>(
       <Table.Row key={product.id}>
         <Table.Cell>{product.productName}</Table.Cell>
@@ -36,7 +36,7 @@ useEffect(()=>{
         <Table.Cell>{product.category.categoryName}</Table.Cell>
       </Table.Row>
         ))
-      }
+    }
       
     </Table.Body>
 
