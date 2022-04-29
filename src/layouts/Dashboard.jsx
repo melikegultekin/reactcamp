@@ -1,15 +1,16 @@
 import React from 'react';
 import ProductList from '../pages/ProductList';
 import Categories from './Categories';
-import Navi from './Navi';
-import { Grid, GridRow } from 'semantic-ui-react'
+import { Grid } from 'semantic-ui-react'
 import { Route } from 'react-router-dom';
 import CartDetail from '../pages/CartDetail';
 import ProductDetail from '../pages/ProductDetail';
+import { ToastContainer } from 'react-toastify';
 
 export default function Dashboard() {
   return (
     <div>
+      <ToastContainer position="bottom-right"/>
       <Grid>
         <Grid.Row>
           <Grid.Column with={4}>
